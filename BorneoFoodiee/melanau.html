@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html> 
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Times New Roman;
+      padding: 10px;
+      background: #d3d3d3;
+      margin: 0; /* Remove default margin */
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 10px;
+      text-align: center;
+      background-image: url('image/hp.jpg');
+    }
+
+    .header h1 {
+      font-family: Mistral;
+      font-size: 100px;
+      color: #ffffff;
+    }
+
+    .header p {
+      font-size: 20px;
+      color: white;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #5f9ea0;
+      margin-top: 0;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 16px; /* Adjusted padding */
+      text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: white;
+      color: white;
+    }
+
+    /* Create two unequal columns that float next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 100%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: transparent;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+      .card {
+      background-color: #5f9ea0;
+      padding: 10px; /* Adjusted padding */
+      margin-top: 10px; /* Adjusted margin-top */
+      height: auto; /* Set the height to match the header size */
+      border: auto; /* Set the border size and color */
+      box-sizing: border-box; /* Ensure that the border size is included in the total size */
+      padding: 10px;
+      text-align: center;  
+  }
+
+
+    /* Clear floats after the columns */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+<body>
+
+<div class="header">
+  <h1>Borneo Foodie.</h1>
+  <p>Borneo Food. Pilihan makanan anda.</p>
+</div>
+
+<div class="topnav">
+  <a href="homepage.html">Home</a>
+  <a href="kadazandusun.html">Kadazandusun</a>
+  <a href="bajau.html">Bajau</a>
+  <a href="murut.html">Murut</a>
+  <a href="sungai.html">Sungai</a>
+  <a href="iban.html">Iban</a>
+  <a href="kenyah.html">Kenyah</a>
+  <a href="kayan.html">Kayan</a>
+  <a href="melanau.html">Melanau</a>
+  <a href="form.html" style="float:right">Feedback</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1><center><p style="color: #ffffff; ">MAKANAN KAUM MELANAU</center></h1>
+      <h3><center><p style="color: #ffffff; ">PIPUS</center></h3>
+      <img class="center-image" src="image/bfmelanau.jpeg" alt="peta borneo" width="400" height="200">
+      <h4><p style="color: #ffffff; ">Kaum Melanau sememangnya terkenal dengan makanan tradisi mereka seperti umai dan linut. Namun, tidak ramai yang tahu akan keunggulan makanan tradisi mereka yang satu ini iaitu pipus. Pipus merupakan sejenis hidangan ikan cincang yang dibakar di dalam daun nipah. Ia terkenal dalam kalangan kaum Melanau di daerah Matu Daro.
+      </h4>
+	  <div style="padding-bottom: 40px;"></div>
+    </div>
+  </div>
+</body>
+<footer>
+  <p>
+    <a target="_blank"> 2023 PETER AHCIN ANAK RANTAI D20211099680 </a>
+  </p>
+</footer>
+
+<style>
+  footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+  }
+
+  footer p {
+    margin: 10px 0;
+  }
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+</style>
+</html>

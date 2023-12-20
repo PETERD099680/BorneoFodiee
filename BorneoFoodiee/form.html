@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/form.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f5f5f5; /* Light background color */
+      color: #333; /* Dark text color */
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 20px;
+      text-align: center;
+      background-color: #fff; /* White background color */
+    }
+
+    .header h1 {
+      font-family: 'Arial Black', Gadget, sans-serif;
+      font-size: 48px;
+      color: #e12c2c; /* Dark red title color */
+    }
+
+    .header p {
+      font-size: 20px;
+      color: #555; /* Dark gray text color */
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #555;
+    }
+
+    /* Form styling */
+    form {
+      padding: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="button"] {
+      background-color: #e12c2c;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      background-color: #d00000;
+    }
+
+    /* Display feedback */
+    .feedback {
+      padding: 20px;
+      background-color: #fff; /* White background color */
+      color: #333; /* Dark text color */
+      margin-top: 20px;
+    }
+
+    .feedback p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Borneo Foodie.</h1>
+    <p>Borneo Food. Pilihan makanan anda.</p>
+  </div>
+
+  <div class="topnav">
+    <a href="homepage.html">Home</a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <form>
+        Rating (1-5): <input type="text" name="rate" id="rate" /><br>
+        Comments : <input type="text" name="comments" id="comments" /><br>
+        <input type="button" name="submit" value="Submit" onclick="feedback()" />
+      </form>
+    </div>
+  </div>
+
+  <div class="feedback">
+    <p>Rating: <span id="displayrate"></span></p>
+    <p>Comments: <input type="text" id="displaycomments" disabled></p>
+  </div>
+
+  <script>
+    function feedback() {
+      //get values from the form
+      var rate = document.getElementById("rate").value;
+      var comments = document.getElementById("comments").value;
+      //display the value on the form
+      document.getElementById("displayrate").innerHTML = rate;
+      document.getElementById("displaycomments").value = comments;
+    }
+  </script>
+
+</body>
+/body>
+<footer>
+ <p>
+  <a target="_blank" > 2023 PETER AHCIN ANAK RANTAI D20211099680 </a>
+  
+ </p>
+</footer>
+
+<style>
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+</style>
+</html>
+
+
+
+</html>
+
